@@ -1,1 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXE STUDIO | Premium Photography</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#d4af37;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1920") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#d4af37;
+}
+
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    color:#ccc;
+    line-height:1.8;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#161616;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:28px;
+    margin:15px 0;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.5s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat{
+    background:#161616;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#d4af37;
+    font-size:40px;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.testimonial{
+    background:#161616;
+    padding:25px;
+    border-radius:15px;
+}
+
+.testimonial h4{
+    color:#d4af37;
+    margin-top:15px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:#1a1a1a;
+    color:white;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#d4af37;
+    color:black;
+    font-weight:700;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:45px;
+}
+
+nav{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LUXE STUDIO</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Capturing Timeless Moments</h1>
+        <p>
+            Premium photography studio specializing in portraits,
+            weddings, fashion and commercial projects.
+        </p>
+        <a href="#contact" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Us</h2>
+    <div class="about">
+        <p>
+            Luxe Studio creates unforgettable visual stories through
+            premium photography and cinematic creativity. With years
+            of experience and hundreds of satisfied clients, we turn
+            every moment into a masterpiece.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="title">Pricing</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Portrait Session</h3>
+            <div class="price">$120</div>
+            <p>Professional indoor or outdoor photoshoot.</p>
+        </div>
+
+        <div class="card">
+            <h3>Family Session</h3>
+            <div class="price">$180</div>
+            <p>Beautiful family memories captured forever.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wedding Package</h3>
+            <div class="price">$950</div>
+            <p>Full-day wedding coverage.</p>
+        </div>
+
+        <div class="card">
+            <h3>Commercial</h3>
+            <div class="price">$750</div>
+            <p>Professional business photography.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="title">Portfolio</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=900">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=900">
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Our Numbers</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat">
+            <h2>1200+</h2>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat">
+            <h2>8+</h2>
+            <p>Years Experience</p>
+        </div>
+
+        <div class="stat">
+            <h2>98%</h2>
+            <p>Satisfaction</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Testimonials</h2>
+
+    <div class="testimonials">
+
+        <div class="testimonial">
+            <p>
+                Amazing experience! The photos exceeded all expectations.
+            </p>
+            <h4>— Sarah Johnson</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                Professional team and outstanding quality.
+            </p>
+            <h4>— Michael Brown</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                Every shot felt like a magazine cover.
+            </p>
+            <h4>— Emma Wilson</h4>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Book Your Session</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone Number">
+
+        <select>
+            <option>Select Service</option>
+            <option>Portrait Session</option>
+            <option>Wedding Package</option>
+            <option>Commercial</option>
+            <option>Family Session</option>
+        </select>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Booking Request</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 LUXE STUDIO • Premium Photography Portfolio
+</footer>
+
+</body>
+</html>
